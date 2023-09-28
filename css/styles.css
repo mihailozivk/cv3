@@ -116,7 +116,8 @@ font-family: 'Martian Mono', monospace;
 .lista {
     color: whitesmoke;
     font-family: 'Lato', sans-serif;
-font-family: 'Martian Mono', monospace;
+    font-family: 'Martian Mono', monospace;
+    text-align: left;
 }
 
 .datumZeleno {
@@ -216,4 +217,29 @@ font-family: 'Martian Mono', monospace;
     .lista {
         text-align: left;
     }
+}
+
+@media only screen and (min-width:640px) and (max-width:1080px) {
+
+    .navP {
+        font-size: 20px;
+    }
+
+    .oMeniH1 {
+        padding-left: 40px;
+    }
+    .oMeniP {
+        padding-left: 40px;
+    }
+
+    .fab {
+        padding-left: 40px;
+    }
+
+    .lista {
+        text-align: left;
+        list-style-position: outside;
+        padding-left: 0;
+    }
+
 }
