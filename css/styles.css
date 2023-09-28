@@ -44,6 +44,7 @@ font-family: 'Martian Mono', monospace;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     
 }
 
@@ -93,7 +94,7 @@ font-family: 'Martian Mono', monospace;
 .fab {
     font-size: 40px;
     padding: 20px;
-    color: aquamarine;
+    color: whitesmoke;
     box-sizing: border-box;
 }
 
@@ -113,7 +114,7 @@ font-family: 'Martian Mono', monospace;
 }
 
 .lista {
-    color: aquamarine;
+    color: whitesmoke;
     font-family: 'Lato', sans-serif;
 font-family: 'Martian Mono', monospace;
 }
@@ -145,7 +146,9 @@ font-family: 'Martian Mono', monospace;
 .footerP:hover {
     color: aliceblue;
 }
-
+.fab:hover{
+    color: aliceblue;
+}
 .fa-html5:hover {
     color: red;
 }
@@ -160,5 +163,58 @@ font-family: 'Martian Mono', monospace;
 }
 
 .fab:active {
-    color: aliceblue;
+    color: aquamarine;
+}
+
+@media only screen and (max-width:640px) {
+    .hiddenMobile {
+        display: none;
+    }
+
+    .navigacija {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hiddenDesktop {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .fa-bars {
+        font-size: 40px;
+        box-sizing: border-box;
+        padding: 5px;
+        color: rgb(16, 56, 176);
+        padding-left: 5px;
+    }
+
+    .navP {
+        font-size: 24px;
+    }
+
+    .paralaxIme {
+        left: 40px;
+        font-size: 24px;
+    }
+
+    .paralaxProgramer {
+        left: 40px;
+        font-size: 14px;
+    }
+
+    .oMeniH1 {
+        padding: 20px 0 10px 10px;
+    }
+
+    .oMeniP {
+        padding: 10px 10px 20px 10px;
+    }
+
+    .lista {
+        text-align: left;
+    }
+
 }
